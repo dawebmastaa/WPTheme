@@ -12,7 +12,7 @@ export default function CoolButton({
 	};
 
 	return (
-		<button className="btn" onClick={() => handleClick()}>
+		<button className="bg-blue-500 rounded-xl p-4 text-white" onClick={() => handleClick()}>
 			I have been clicked {clickCount} times.
 		</button>
 	);
