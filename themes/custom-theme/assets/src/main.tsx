@@ -1,19 +1,9 @@
-// @ts-nocheck
-import React from 'react';
-import domReady from '@wordpress/dom-ready';
 import { createRoot } from 'react-dom/client';
+import domReady from '@wordpress/dom-ready';
 
-import CoolButton from './components/CoolButton';
 import './main.scss';
 
-const App = () => {
-	return (
-		<div>
-			<h1>Hello, from React!</h1>
-			<CoolButton onClickValue="I have been pressed">Press me</CoolButton>
-		</div>
-	);
-};
+import App from './components/App';
 
 domReady(() => {
 	const testElement = document.getElementById('test');
