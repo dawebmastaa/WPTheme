@@ -1,0 +1,26 @@
+{
+  "name": "wp-scripts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "env:start": "wp-env start",
+    "env:stop": "wp-env stop",
+    "assets:build": "wp-scripts build themes/custom-theme/assets/src/main.js --output-path=themes/custom-theme/assets/build/",
+    "assets:start": "wp-scripts start themes/custom-theme/assets/src/main.js --output-path=themes/custom-theme/assets/build/",
+    "assets:start:hot": "wp-scripts start themes/custom-theme/assets/src/main.js --output-path=themes/custom-theme/assets/build/ --hot",
+    "assets:format": "wp-scripts lint-js themes/custom-theme/assets/src/ --quiet",
+    "assets:format:fix": "wp-scripts lint-js themes/custom-theme/assets/src/ --fix --quiet"
+  },
+  "keywords": [],
+  "author": "SeeScottDev",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@wordpress/env": "^10.10.0",
+    "@wordpress/scripts": "^26.12.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1"
+  }
+}
